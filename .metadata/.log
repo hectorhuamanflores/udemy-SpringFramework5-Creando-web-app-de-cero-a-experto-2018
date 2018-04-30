@@ -1,0 +1,2024 @@
+!SESSION 2018-04-28 18:30:46.360 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\ProyectoUdemy\SpringUdemy\fuentes
+
+!ENTRY org.eclipse.ui 2 0 2018-04-28 18:30:51.178
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-04-28 18:30:51.178
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2018-04-28 18:30:53.870
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-28 18:30:53.870
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b7f9eaa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b344510,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-28 18:30:53.870
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.refresh,Refresh,
+		Refreshes the tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c73d613,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.springsource.sts.roo.ui.shell.show,Open Roo Command Prompt,
+		Roo Command Prompt,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21fbfdd5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 18:30:56.861
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 18:30:56.862
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-04-28 18:31:00.191
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hector'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2018-04-28 18:31:21.590
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2018-04-28 18:31:21.595
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2018-04-28 18:31:21.595
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 20:18:00.871
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 20:18:00.872
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.chain.rcp 2 4 2018-04-28 20:31:21.737
+!MESSAGE Cannnot handle ‘class org.eclipse.jdt.internal.compiler.ast.MemberValuePair’ as parent of completion location.
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.chain.rcp.TypeBindingAnalyzer.resolveBindingsForExpectedTypes(TypeBindingAnalyzer.java:223)
+	at org.eclipse.recommenders.internal.chain.rcp.ChainCompletionProposalComputer.executeCallChainSearch(ChainCompletionProposalComputer.java:259)
+	at org.eclipse.recommenders.internal.chain.rcp.ChainCompletionProposalComputer.computeCompletionProposals(ChainCompletionProposalComputer.java:100)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:331)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:288)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.handleRepeatedInvocation(CompletionProposalPopup.java:547)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:512)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:184)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor245.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.ui 4 0 2018-04-28 21:58:44.291
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Comparison method violates its general contract!)
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.util.TimSort.mergeHi(Unknown Source)
+	at java.util.TimSort.mergeAt(Unknown Source)
+	at java.util.TimSort.mergeForceCollapse(Unknown Source)
+	at java.util.TimSort.sort(Unknown Source)
+	at java.util.Arrays.sort(Unknown Source)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.sortProposals(CompletionProposalPopup.java:2009)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.setProposals(CompletionProposalPopup.java:1171)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$7(CompletionProposalPopup.java:1154)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:371)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 23 more
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 22:05:37.722
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 22:05:37.724
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 22:06:49.687
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 22:06:49.735
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-04-28 22:20:32.431
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.0.20140606-0033.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:333)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:236)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:523)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:172)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:96)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor412.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:196)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:523)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:474)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:172)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:96)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:116)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:73)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor412.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:196)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Artifact.loadRepository(CachingRepositoryManager.java:523)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:104)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:100)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedArtifactRepositories(ProvisioningContext.java:160)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getArtifactRepositories(ProvisioningContext.java:143)
+	at org.eclipse.equinox.internal.p2.engine.DownloadManager.start(DownloadManager.java:91)
+	at org.eclipse.equinox.internal.p2.engine.phases.Collect.completePhase(Collect.java:104)
+	at org.eclipse.equinox.internal.p2.engine.Phase.postPerform(Phase.java:251)
+	at org.eclipse.equinox.internal.p2.engine.Phase.perform(Phase.java:101)
+	at org.eclipse.equinox.internal.p2.engine.PhaseSet.perform(PhaseSet.java:47)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:75)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:44)
+	at org.eclipse.equinox.p2.operations.ProvisioningSession.performProvisioningPlan(ProvisioningSession.java:175)
+	at org.eclipse.equinox.p2.operations.ProfileModificationJob.runModal(ProfileModificationJob.java:79)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 1000 2018-04-28 22:20:32.432
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.0.20140606-0033.
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-28 23:37:39.341
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2018-04-28 23:37:39.696 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/ProyectoUdemy/SpringUdemy/fuentes/
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-28 23:37:53.299
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2018-04-28 23:37:54.839
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-04-28 23:37:54.839
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2018-04-28 23:37:57.438
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-28 23:37:57.438
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.refresh,Refresh,
+		Refreshes the tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@149ca998,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.springsource.sts.roo.ui.shell.show,Open Roo Command Prompt,
+		Roo Command Prompt,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@159c9c91,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-28 23:37:57.438
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@71e32098,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@385d9880,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-04-28 23:38:09.168
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hector'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2018-04-28 23:38:22.955
+!MESSAGE Could not call browser function extension: addHtml
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Problems executing script: 'window.addHtml("gettingStarted", "<a class=\"ide_widget btn btn-black uppercase\" href=\"\" onclick=\"return ide.call('org.springframework.openGuideWizard','Getting Started Guide')\">Import Getting Started Guide</a>\n<a class=\"ide_widget btn btn-black uppercase\" href=\"\" onclick=\"return ide.call('org.springframework.openGuideWizard','Reference App')\">Import Reference App</a>\n")'
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserManager.lambda$0(StsBrowserManager.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2018-04-28 23:38:22.982
+!MESSAGE Could not call browser function extension: addHtml
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Problems executing script: 'window.addHtml("projectWizards", "<a class=\"ide_widget btn btn-black uppercase\" href=\"\" onclick=\"return ide.call('openWizard', 'org.eclipse.jdt.ui.wizards.JavaProjectWizard')\">Create Java Project</a><a class=\"ide_widget btn btn-black uppercase\" href=\"\" onclick=\"return ide.call('openWizard', 'org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard')\">Create Spring Starter Project</a><a class=\"ide_widget btn btn-black uppercase\" href=\"\" onclick=\"return ide.call('openWizard', 'com.springsource.sts.roo.ui.wizard.newRooProjectWizard')\">Create Spring Roo Project</a>")'
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserManager.lambda$0(StsBrowserManager.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2018-04-28 23:38:22.989
+!MESSAGE Could not call browser function extension: addHtml
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Problems executing script: 'window.addHtml("updates", "<div class=\"blog--container blog-preview\">\t<div class=\"blog--title\">   <i class=\"fa fa-exclamation new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'http://spring.io/tools')\"><b>Thanks for installing STS 3.9.4</b></a>\t</div></div>")'
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserManager.lambda$0(StsBrowserManager.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2018-04-28 23:38:23.074
+!MESSAGE Could not call browser function extension: addHtml
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Problems executing script: 'window.addHtml("feeds", "<div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/25/spring-cloud-finchley-rc1-has-been-released')\">Spring Cloud Finchley.RC1 Has Been Released</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>On behalf of the community, I am pleased to announce that the Release Candidate 1 (RC1) of the Spring Cloud Finchley Release Train is available today. The release can be found in Spring Milestone repository ...\t\t<span class=\"author\">Ryan Baxter <i>25-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/25/spring-tips-spring-statemachine')\">Spring Tips: Spring Statemachine</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Speaker: Josh Long Hi Spring fans! In this installment we’ll look at how to extricate process state - valuable for coordinating long running or mutli-actor processes - from business logic with Spring Statemachine ...\t\t<span class=\"author\">Josh Long <i>25-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/24/this-week-in-spring-april-24th-2018')\">This Week in Spring - April 24th, 2018</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Hi Spring fans! Welcome to another incredible installment of all that’s fit to tweet, blog, record and print about Spring! It’s been an insane week! Since our last installment I was in Paris, FR, for the ...\t\t<span class=\"author\">Josh Long <i>24-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/23/dependency-management-plugin-1-0-5-release')\">Dependency Management Plugin 1.0.5.RELEASE</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>I am pleased to announce that Gradle dependency management plugin 1.0.5.RELEASE is now available from Maven Central, Bintray, and the Gradle Plugin Portal. This maintenance release fixes a handful of issues ...\t\t<span class=\"author\">Andy Wilkinson <i>23-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/20/spring-cloud-data-flow-1-5-m1-released')\">Spring Cloud Data Flow 1.5 M1 released</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>The Spring Cloud Data Flow team is pleased to announce the release of 1.5.0 M1. Follow the Getting Started guides for Local Server, Cloud Foundry, and Kubernetes. Here are the highlights: UI Improvements ...\t\t<span class=\"author\">Mark Pollack <i>20-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/19/kafka-streams-and-spring-cloud-stream')\">Kafka Streams and Spring Cloud Stream</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>On the heels of the recently announced Spring Cloud Stream Elmhurst.RELEASE, we are pleased to present another blog installment dedicated to Spring Cloud Stream’s native integration with the Apache Kafka ...\t\t<span class=\"author\">Soby Chacko <i>19-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/18/new-in-spring-data-lovelace-m2-get-ready-for-mongodb-3-6-and-4-0')\">New in Spring Data Lovelace M2 - Get ready for MongoDB 3.6 and 4.0.</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>With the latest Spring Data Lovelace Milestone 2 release, the MongoDB module is stacking up new features that are coming your way in the near future. As you might have followed in the news, MongoDB 4 is ...\t\t<span class=\"author\">Christoph Strobl <i>18-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/18/spring-tips-redis')\">Spring Tips: Redis</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>speaker: Josh Long Hi Spring fans! In this installment we look at the many facets of Redis, the distributed data structure server. Spring supports Redis through the Spring Cache abstraction, Spring Session ...\t\t<span class=\"author\">Josh Long <i>17-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/17/this-week-in-spring-april-17th-2018')\">This Week in Spring - April 17th, 2018</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Hi Spring fans! Welcome to another installment of This Week in Spring! This week I’m in Paris, France and I’ll be in Mainz, Germany, next week for JAX and Linz, Austria for the DevOne event. If you’re ...\t\t<span class=\"author\">Josh Long <i>17-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/17/spring-integration-for-aws-2-0-0-m2-and-spring-cloud-stream-kinesis-binder-1-0-0-m2')\">Spring Integration for AWS 2.0.0.M2 and Spring Cloud Stream Kinesis Binder 1.0.0.M2</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Dear Spring Community! It’s my pleasure to announce Milestone releases for Spring projects supporting Amazon Web Services: Spring Integration for AWS 2.0.0.M2 and Spring Cloud Stream Binder for AWS Kinesis ...\t\t<span class=\"author\">Artem Bilan <i>17-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/16/spring-cloud-task-2-0-0-rc1-is-now-available')\">Spring Cloud Task 2.0.0.RC1 is now available</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>We are pleased to announce that Spring Cloud Task 2.0.0.RC1 is now available on Github and the Pivotal download repository. Many thanks to all of those who contributed to this release.What’s New? This ...\t\t<span class=\"author\">Michael Minella <i>16-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/16/what-s-new-in-spring-cloud-gcp-1-0-0-milestone-3')\">What's new in Spring Cloud GCP 1.0.0 Milestone 3</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Dear Spring Community! The Spring Cloud GCP is a set of Spring Boot starters that is designed to help you leverage Google Cloud Platform managed services directly from Spring Boot, allowing you to use ...\t\t<span class=\"author\">Artem Bilan <i>16-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/16/spring-tool-suite-3-9-4-released')\">Spring Tool Suite 3.9.4 released</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Dear Spring Community, I am happy to announce the 3.9.4 release of the Spring Tool Suite, our Eclipse-based tooling. Highlights from this release include: updated to Eclipse Oxygen.3a release, including ...\t\t<span class=\"author\">Martin Lippert <i>16-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/13/spring-data-lovelace-m2-released')\">Spring Data Lovelace M2 released</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>On behalf of the Spring Data team, I’d like to announce the availability of the second milestone of the Lovelace release train. This release ships with updates for all store modules that contain new features ...\t\t<span class=\"author\">Mark Paluch <i>13-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/12/spring-security-oauth-2-3-2-released')\">Spring Security OAuth 2.3.2 Released</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>On behalf of the community, I’m pleased to announce the release of Spring Security OAuth 2.3.2.RELEASE. This release resolves a runtime incompatibility issue with RedisTokenStore and Spring Data Redis ...\t\t<span class=\"author\">Joe Grandja <i>12-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/11/event-storming-and-spring-with-a-splash-of-ddd')\">Event Storming and Spring with a Splash of DDD</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>It is my pleasure to announce that I have just joined the developer advocacy team at Pivotal, focusing on Spring. I feel privileged to have the opportunity to learn and collaborate with great and passionate ...\t\t<span class=\"author\">Jakub Pilimon <i>11-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/11/multiple-cve-reports-published-for-spring-data')\">Multiple CVE reports published for Spring Data</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Last week, we released Spring Data Ingalls SR11 and Kay SR, which include fixes for the following vulnerabilities: https://pivotal.io/security/cve-2018-1273 https://pivotal.io/security/cve-2018-1274 Spring ...\t\t<span class=\"author\">Mark Paluch <i>11-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/11/spring-tips-the-cloud-foundry-java-client')\">Spring Tips: the Cloud Foundry Java Client</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Speaker: Josh Long Hi Spring fans! In this installment of Spring Tips we’ll look at the reactive Cloud Foundry Java client. We’ll see how to use it support applications that know how to deploy themselves ...\t\t<span class=\"author\">Josh Long <i>11-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/11/this-week-in-spring-april-10th-2018')\">This Week in Spring - April 10th, 2018</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>Hi Spring fans! This week I’m in Atlanta, Indianapolis and Cincinnati! I’ll be speaking at the Atlanta, GA Spring Meetup on Tuesday the 10th where I’ll be looking about all things new, bootiful and cloud ...\t\t<span class=\"author\">Josh Long <i>10-abr-2018</i></span></p>\t\t</div>\t</div></div><div class=\"blog--container blog-preview\">\t<div class=\"blog--title\"><i class=\"fa fa-star new-star\"></i>\t<a href=\"\" onclick=\"return ide.call('openWebPage', 'https://spring.io/blog/2018/04/10/spring-io-platform-brussels-sr9')\">Spring IO Platform Brussels SR9</a>\t</div>\t<div class=\"blog--post\">\t\t<div>\t\t\t<p>I am pleased to announce that Spring IO Platform Brussels-SR9 is now available from both repo.spring.io and Maven Central. This maintenance release upgrades the versions of a number of the projects in ...\t\t<span class=\"author\">Andy Wilkinson <i>10-abr-2018</i></span></p>\t\t</div>\t</div></div>")'
+	at org.springsource.ide.eclipse.commons.browser.swt.StsBrowserManager.lambda$0(StsBrowserManager.java:148)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 23:39:02.776
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 23:39:02.777
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 23:39:02.824
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-28 23:39:02.825
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-28 23:39:03.295
+!MESSAGE Scanning for dialect help files on project dependencies
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-28 23:39:03.506
+!MESSAGE Help file found: Standard-Dialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-28 23:39:03.508
+!MESSAGE Help file found: LayoutDialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-28 23:39:03.594
+!MESSAGE Scanning complete.  Execution time: 299ms
+
+!ENTRY Activator 4 0 2018-04-29 00:30:53.157
+!MESSAGE NullPointerException: null
+!STACK 0
+java.lang.NullPointerException
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsPortRefresher.getElementFor(DevtoolsPortRefresher.java:92)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsPortRefresher.processCreated(DevtoolsPortRefresher.java:68)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processCreated(ProcessTracker.java:104)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.<init>(ProcessTracker.java:58)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsPortRefresher.<init>(DevtoolsPortRefresher.java:49)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.init(LocalBootDashModel.java:172)
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.getElements(LocalBootDashModel.java:237)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashTreeContentProvider.getChildren(BootDashTreeContentProvider.java:49)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashTreeContentProvider.hasChildren(BootDashTreeContentProvider.java:77)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2136)
+	at org.eclipse.jface.viewers.TreeViewer.isExpandable(TreeViewer.java:538)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.isExpandable(AbstractTreeViewer.java:2166)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.updatePlus(AbstractTreeViewer.java:2849)
+	at org.eclipse.jface.viewers.TreeViewer.updatePlus(TreeViewer.java:786)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:844)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$0(AbstractTreeViewer.java:820)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:795)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:596)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:766)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1538)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:772)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.lambda$1(AbstractTreeViewer.java:1523)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1458)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:354)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1419)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1517)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:286)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1696)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection.createContents(BootDashUnifiedTreeSection.java:303)
+	at org.springframework.ide.eclipse.boot.dash.views.sections.ViewPartWithSections.createPartControl(ViewPartWithSections.java:65)
+	at org.springframework.ide.eclipse.boot.dash.views.BootDashTreeView.createPartControl(BootDashTreeView.java:113)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:150)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:143)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:536)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:520)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1317)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:72)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4821)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$5.widgetSelected(StackRenderer.java:1095)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:802)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3167)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1850)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:333)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 01:24:09.736
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 01:24:09.736
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 01:24:21.938
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 01:24:21.939
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-04-29 12:13:21.914 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\ProyectoUdemy\SpringUdemy\fuentes
+
+!ENTRY org.eclipse.ui 2 0 2018-04-29 12:13:33.005
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-04-29 12:13:33.005
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2018-04-29 12:13:40.054
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-29 12:13:40.054
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a177f2c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c82f6bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-04-29 12:13:40.054
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.refresh,Refresh,
+		Refreshes the tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e70d072,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.springsource.sts.roo.ui.shell.show,Open Roo Command Prompt,
+		Roo Command Prompt,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f77917c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-04-29 12:14:12.971
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hector'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-04-29 12:14:21.564
+!MESSAGE Getting a lock required more than 10000 ms. There might be a synchronization problem in this callstack or just the build/dispose process of some components took too long! 
+!STACK 0
+java.lang.Exception: Debug stacktrace
+	at org.eclipse.equinox.internal.ds.InstanceProcess.getLock(InstanceProcess.java:120)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:560)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.addingService(ProvisioningAgent.java:159)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springsource.ide.eclipse.commons.internal.core.net.P2TransportService.getTransport_e3_7(P2TransportService.java:80)
+	at org.springsource.ide.eclipse.commons.internal.core.net.P2TransportService.<init>(P2TransportService.java:52)
+	at org.springsource.ide.eclipse.commons.core.HttpUtil.getTransport(HttpUtil.java:151)
+	at org.springsource.ide.eclipse.commons.core.HttpUtil.stream(HttpUtil.java:165)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob$1.run(AggregateFeedJob.java:145)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 12:48:49.303
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 12:48:49.306
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 12:51:35.911
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 12:51:35.911
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:51:36.437
+!MESSAGE Scanning for dialect help files on project dependencies
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:51:36.770
+!MESSAGE Help file found: LayoutDialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:51:36.805
+!MESSAGE Help file found: Standard-Dialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:51:36.808
+!MESSAGE Scanning complete.  Execution time: 371ms
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:53:19.751
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: full
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 12:53:19.751
+!MESSAGE Checking project: spring-boot-data-jpa
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 13:02:33.067
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 13:02:33.068
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 13:02:33.068
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:29.259
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:29.260
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:29.260
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:38.721
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:38.745
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:05:38.746
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2018-04-29 14:06:16.744
+!MESSAGE The ''Thymeleaf Processor Proposal Computer'' proposal computer from the ''org.thymeleaf.extras.eclipse.contentassist'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at org.eclipse.wst.sse.core.internal.text.TextRegionListImpl.get(TextRegionListImpl.java:147)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.makeAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.java:195)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.generateProposals(AttributeProcessorProposalGenerator.java:166)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer.computeCompletionProposals(CompletionProposalComputer.java:84)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:284)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:290)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:484)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:255)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:127)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:560)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:494)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:487)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:488)
+	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPTextEditor$JSPStructuredTextViewer.doOperation(JSPTextEditor.java:680)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:06:48.092
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:06:48.093
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:06:48.094
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 14:08:05.757
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 14:08:05.758
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:09:41.392
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:09:41.440
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:09:41.489
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:10:13.839
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:10:13.840
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:10:13.840
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:01.870
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:01.871
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:01.872
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:13.188
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:13.189
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:13:13.189
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:18:40.351
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:18:40.352
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:18:40.353
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:48:51.605
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:48:51.605
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:48:51.606
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:14.610
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:14.610
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:14.611
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:47.003
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:47.004
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:49:47.004
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:38.721
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:38.722
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:38.722
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:53.126
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:53.127
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:50:53.128
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:34.705
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:34.706
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:34.706
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:49.630
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:49.631
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 14:51:49.631
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:08:44.326
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:08:44.326
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:08:44.327
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:09:54.046
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:09:54.046
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:09:54.047
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:31.799
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:31.800
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:31.800
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:48.138
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:48.139
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:16:48.139
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:17:18.030
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:17:18.030
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:17:18.030
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:20:24.383
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:20:24.383
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:20:24.384
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:33.102
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:33.103
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:33.104
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:53.485
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:53.486
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:23:53.487
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:24:55.221
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:24:55.221
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:24:55.222
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:05.809
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:05.810
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:05.810
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:33.630
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:33.632
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:25:33.632
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:26:44.728
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:26:44.728
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:26:44.729
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:27:26.164
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:27:26.165
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:27:26.165
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:28:03.890
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:28:03.891
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:28:03.891
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:25.626
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:25.626
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:25.627
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:37.941
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:37.942
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:37.942
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:48.102
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:48.103
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:29:48.104
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:32.625
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:32.625
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:32.625
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:59.732
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:59.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:32:59.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:37.621
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:37.622
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:37.622
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:52.768
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:52.769
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:33:52.769
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:34:04.498
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:34:04.498
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 15:34:04.499
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:30:27.983
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:30:27.984
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:30:27.985
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:31:57.861
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:31:57.862
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:31:57.862
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:32:03.272
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:32:03.273
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:32:03.273
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:35:55.348
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:35:55.350
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:35:55.350
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:36.669
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:36.670
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:36.670
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:45.663
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:45.664
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:53:45.664
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:15.252
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:15.253
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:15.253
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:45.548
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:45.549
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:55:45.549
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:56:21.362
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:56:21.362
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:56:21.363
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:57:09.297
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:57:09.298
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:57:09.298
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:59:31.250
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:59:31.250
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 16:59:31.251
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:08:25.736
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:08:25.737
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:08:25.737
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:09:20.737
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:09:20.738
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:09:20.738
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:10:09.389
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:10:09.390
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:10:09.390
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:12:06.911
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:12:06.912
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:12:06.912
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:14:36.182
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:15:26.751
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:18:03.808
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:21:49.397
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:21:49.398
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:21:49.398
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:22:18.457
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:22:18.458
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:22:18.459
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:25:30.690
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:25:30.691
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:25:30.692
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:26:19.079
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:26:19.080
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:26:19.080
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:32:00.815
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:32:00.816
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:32:00.816
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.eclipse.ui 4 0 2018-04-29 17:32:24.139
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: )
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4211)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3827)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:47)
+	at org.eclipse.jface.internal.text.html.BrowserInformationControl.setInput(BrowserInformationControl.java:274)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1194)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1163)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:894)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:244)
+	at org.eclipse.jface.text.TextViewerHoverManager$5.run(TextViewerHoverManager.java:234)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	... 23 more
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:06.616
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:06.617
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:06.617
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:42.780
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:42.781
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 17:33:42.781
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:31:11.061
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:31:11.062
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:31:11.062
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:32:44.245
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:32:44.246
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:32:44.247
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:50:20.098
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:50:20.098
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:50:20.099
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 18:50:25.661
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-29 18:50:25.662
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:51:32.391
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:51:32.441
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 18:51:32.489
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:13:35.998
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:13:35.999
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:13:36.003
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:38.147
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:38.196
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:38.245
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:44.977
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:45.025
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:45.074
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:47.928
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:47.998
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:16:48.046
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2018-04-29 20:18:00.964
+!MESSAGE The ''Thymeleaf Processor Proposal Computer'' proposal computer from the ''org.thymeleaf.extras.eclipse.contentassist'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at org.eclipse.wst.sse.core.internal.text.TextRegionListImpl.get(TextRegionListImpl.java:147)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.makeAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.java:195)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.generateProposals(AttributeProcessorProposalGenerator.java:166)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer.computeCompletionProposals(CompletionProposalComputer.java:84)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:284)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:290)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:484)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:255)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:127)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:560)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:494)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:487)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:488)
+	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPTextEditor$JSPStructuredTextViewer.doOperation(JSPTextEditor.java:680)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:22.359
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:22.360
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:22.360
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:44.639
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:44.640
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:44.640
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2018-04-29 20:19:53.607
+!MESSAGE The ''Thymeleaf Processor Proposal Computer'' proposal computer from the ''org.thymeleaf.extras.eclipse.contentassist'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at org.eclipse.wst.sse.core.internal.text.TextRegionListImpl.get(TextRegionListImpl.java:147)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.makeAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.java:195)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.generateProposals(AttributeProcessorProposalGenerator.java:166)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer.computeCompletionProposals(CompletionProposalComputer.java:84)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:284)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:290)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:484)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:255)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:127)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:560)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:494)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:487)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:488)
+	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPTextEditor$JSPStructuredTextViewer.doOperation(JSPTextEditor.java:680)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:59.235
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:59.236
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:19:59.236
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:20:09.939
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: incremental
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:20:09.939
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:20:09.940
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 2 2018-04-29 20:36:29.959
+!MESSAGE Exception caused by readAndDispatch, not caused by or fatal to caller
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.readAndDispatch(ToggleLineCommentHandler.java:262)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.run(ToggleLineCommentHandler.java:202)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler.processAction(ToggleLineCommentHandler.java:119)
+	at org.eclipse.wst.sse.ui.internal.handlers.AbstractCommentHandler.execute(AbstractCommentHandler.java:62)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:31.829
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:31.830
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:31.830
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:52.915
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:52.916
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:36:52.916
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:12.279
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:12.280
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:12.281
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:42.404
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:42.413
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:39:42.415
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:40:38.162
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:40:38.163
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:40:38.163
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:42:29.109
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:42:29.157
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:42:29.205
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 2 2018-04-29 20:43:23.405
+!MESSAGE Exception caused by readAndDispatch, not caused by or fatal to caller
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.readAndDispatch(ToggleLineCommentHandler.java:262)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.run(ToggleLineCommentHandler.java:202)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler.processAction(ToggleLineCommentHandler.java:119)
+	at org.eclipse.wst.sse.ui.internal.handlers.AbstractCommentHandler.execute(AbstractCommentHandler.java:62)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:24.663
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:24.663
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:24.663
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:35.500
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:35.502
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:43:35.503
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:26.573
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:26.574
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:26.574
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:38.183
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:38.184
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:38.184
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:56.070
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:56.070
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:44:56.071
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:58:31.610
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:58:31.611
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 20:58:31.611
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:02:12.472
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:02:12.473
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:02:12.473
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:03:47.723
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:03:47.724
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:03:47.724
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:05.047
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:05.047
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:05.048
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:24.139
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:24.139
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:05:24.140
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:07:40.759
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:07:40.760
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:07:40.761
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:09:56.113
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:09:56.113
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:09:56.114
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:10:06.504
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: incremental
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:10:06.504
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:10:06.505
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:12:21.552
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:12:21.552
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-04-29 21:12:21.553
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html

@@ -1,0 +1,9 @@
+package com.example.demo.models.dao;
+
+
+
+
+public interface IClienteDao {
+    
+	public List<Cliente> findAll();
+}

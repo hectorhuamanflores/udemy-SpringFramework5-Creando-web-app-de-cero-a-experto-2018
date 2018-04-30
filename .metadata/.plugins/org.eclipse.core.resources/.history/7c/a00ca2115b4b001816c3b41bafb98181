@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}">Insert title here</title>
+</head>
+<body>
+    <h1 th:text="${titulo}"></h1>
+    
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>nombre</th>
+				<th>apellido</th>
+				<th>email</th>
+				<th>fecha</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>A</th>
+				<th>B</th>
+				<th>C</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8" />
+<title th:text="${titulo}">Formulario</title>
+</head>
+<body>
+    
+    <h1 th:text="${titulo}" ></h1>
+</body>
+</html>

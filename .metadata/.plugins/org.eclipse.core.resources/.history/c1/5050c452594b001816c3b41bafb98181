@@ -1,0 +1,13 @@
+package com.example.demo.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+@Controller
+public class ClienteController {
+    
+	public String listar(Model model){
+		model.addAttribute("titulo", "Listado de Clientes");
+		return "listar";
+	}
+}
