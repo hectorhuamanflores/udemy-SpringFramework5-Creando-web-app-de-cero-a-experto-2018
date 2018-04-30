@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.models.entity.Cliente;
 
@@ -36,6 +37,7 @@ public class ClienteDaoImpl implements IClienteDao {
 	}
 
 	@Override
+	
 	public void delete(long id) {
 		Cliente cliente = findOne(id);
 		em.remove(cliente);

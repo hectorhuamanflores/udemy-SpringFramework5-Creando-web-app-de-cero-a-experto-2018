@@ -22,12 +22,12 @@ import com.example.demo.models.service.IClienteService;
 public class ClienteController {
     
 	@Autowired
-	private IClienteService clienteService;
+	private IClienteService clienteDao;
 	
 	@RequestMapping( value="/listar",method=RequestMethod.GET )
 	public String listar(Model model){
 		model.addAttribute("titulo", "Listado de Clientes");
-		model.addAttribute("clientes", clienteService.findAll());
+		model.addAttribute("clientes", clienteDao.findAll());
 		return "listar";
 	}
 	
@@ -44,7 +44,7 @@ public class ClienteController {
 	public String editar(@PathVariable(value="id") Long id,Map<String,Object> model){
 		Cliente cliente = null;
 		if(id>0){
-			cliente = clienteService.findOne(id);
+			cliente = clienteDao.findOne(id);
 		}else{
 			return "redirect:/listar";
 		}
@@ -60,7 +60,7 @@ public class ClienteController {
 			model.addAttribute("titulo","Formulario de Cliente");
 			return "form";
 		}
-		clienteService.save(cliente);
+		clienteDao.save(cliente);
 		status.setComplete();
 	    return "redirect:listar";
 	}
@@ -68,7 +68,7 @@ public class ClienteController {
 	@RequestMapping( value="/eliminar/{id}")
 	public String eliminar(@PathVariable(value="id") long id){
 		if(id>0){
-			clienteService.delete(id);
+			clienteDao.delete(id);
 		}
 		return "redirect:/listar";
 	}

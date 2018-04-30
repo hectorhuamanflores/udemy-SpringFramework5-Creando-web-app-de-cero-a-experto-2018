@@ -1,0 +1,38 @@
+package com.example.demo.models.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.models.dao.IClienteDao;
+import com.example.demo.models.entity.Cliente;
+
+public class ClienteServiceImpl implements IClienteService{
+    
+	@Autowired
+	private IClienteDao clienteDao;
+	@Override
+	public List<Cliente> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Cliente findOne(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
