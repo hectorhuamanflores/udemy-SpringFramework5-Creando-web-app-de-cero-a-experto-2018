@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8" />
-<title th:text="${titulo}">Insert title here</title>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-</head>
+<head th:replace="layout/layout :: head"></head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Spring Boot</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="#about" th:href="@{/listar}">Cliente</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="container">
-		<h1 class="text-secondary border border-success border-top-0 border-left-0 border-right-0" th:text="${titulo}"></h1>
-        <p><a th:href="@{/form}">Crear cliente</a></p>
-		<table class="table table-striped table-bordered">
-			<thead class="thead-dark">
-				<tr>
-					<th>id</th>
-					<th>nombre</th>
-					<th>apellido</th>
-					<th>email</th>
-					<th>fecha</th>
-					<th>editar</th>
-					<th>eliminar</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr th:each="cliente: ${clientes}">
-					<td th:text="${cliente.id}"></td>
-					<td th:text="${cliente.nombre}"></td>
-					<td th:text="${cliente.apellido}"></td>
-					<td th:text="${cliente.email}"></td>
-					<td th:text="${cliente.createAt}"></td>
-					<td><a class="btn btn-primary btn-xs" th:href="@{/form/}+${cliente.id}" th:text="editar"></a></td>
-				    <td><a class="btn btn-danger btn-xs" th:href="@{/eliminar/}+${cliente.id}" th:text="eliminar" onclick="return confirm('Estas seguro que deseas eliminar el regitro');"></a></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 
+	<header th:replace="layout/layout :: header"></header>
+
+	<div class="container py-4">
+		<div class="card bg-light">
+			<div class="card-header" th:text="${titulo}"></div>
+			<div class="card-body">
+				<h4 class="card-title">
+					<a th:href="@{/form}" class="btn btn-primary btn-xs">Crear Cliente</a>
+				</h4>
+				<table class="table table-striped table-bordered">
+					<thead class="thead-dark">
+						<tr>
+							<th>id</th>
+							<th>nombre</th>
+							<th>apellido</th>
+							<th>email</th>
+							<th>fecha</th>
+							<th>editar</th>
+							<th>eliminar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cliente: ${clientes}">
+							<td th:text="${cliente.id}"></td>
+							<td th:text="${cliente.nombre}"></td>
+							<td th:text="${cliente.apellido}"></td>
+							<td th:text="${cliente.email}"></td>
+							<td th:text="${cliente.createAt}"></td>
+							<td><a class="btn btn-primary btn-sm"
+								th:href="@{/form/}+${cliente.id}" th:text="editar"></a></td>
+							<td><a class="btn btn-danger btn-sm"
+								th:href="@{/eliminar/}+${cliente.id}" th:text="eliminar"
+								onclick="return confirm('Estas seguro que deseas eliminar el regitro');"></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<nav th:replace="paginator-nav :: paginator"></nav>
+			</div>
+		</div>
+
+
+	</div>
+	<footer th:replace="layout/layout :: footer"></footer>
 </body>
 </html>

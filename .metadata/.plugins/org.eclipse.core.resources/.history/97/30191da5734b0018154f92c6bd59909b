@@ -1,5 +1,0 @@
-spring.datasource.url jdbc\:h2\:mem\:clientesdb
-spring.datasource.username=hector
-spring.datasource.password=sa
-spring.datasource.drive-class-name=org.h2.Drive
-spring.h2.console.enabled=true

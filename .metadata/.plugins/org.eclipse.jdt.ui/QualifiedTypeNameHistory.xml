@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
 <fullyQualifiedTypeName name="antlr.collections.List"/>
 <fullyQualifiedTypeName name="scala.annotation.meta.field"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
@@ -30,4 +29,13 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.fetch.Request"/>
 <fullyQualifiedTypeName name="org.springframework.data.solr.core.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.PagingAndSortingRepository"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.example.demo.util.paginacion.PageItem"/>
+<fullyQualifiedTypeName name="com.example.demo.util.paginacion.PageRender"/>
 </qualifiedTypeNameHistroy>
