@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+org.jboss.tools.common.validator.enableBlock=enabled
+org.jboss.tools.common.validator.problem.markersBlock=20
+org.jboss.tools.common.validator.problem.wrongBuilderOrder=error
+org.jboss.tools.jst.web.kb.validator.problem.checkVars=enabled
+org.jboss.tools.jst.web.kb.validator.problem.elSyntaxError=warning
+org.jboss.tools.jst.web.kb.validator.problem.nonExternalizedString=ignore
+org.jboss.tools.jst.web.kb.validator.problem.revalidateUnresolvedEl=enabled
+org.jboss.tools.jst.web.kb.validator.problem.unknownElVariableName=ignore
+org.jboss.tools.jst.web.kb.validator.problem.unknownElVariablePropertyName=warning
+org.jboss.tools.jst.web.kb.validator.problem.unpairedGetterOrSetter=ignore

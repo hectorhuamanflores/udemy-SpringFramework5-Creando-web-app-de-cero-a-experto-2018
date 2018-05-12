@@ -1,9 +1,17 @@
 package com.example.demo.controllers;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.validation.Valid;
 
+import org.apache.tomcat.jni.File;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -17,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.demo.models.entity.Cliente;
@@ -29,7 +38,20 @@ public class ClienteController {
     
 	@Autowired
 	private IClienteService clienteService;
+	private final Logger log = LoggerFactory.getLogger(getClass());
+	private final static String UPLOADS_FOLDER ="uploads";
 	
+	@RequestMapping(value="/ver/{id}")
+	public String ver(@PathVariable(value="id") Long id,Map<String,Object> model,RedirectAttributes flash){
+		Cliente cliente = clienteService.findOne(id);
+		if(cliente == null){
+			flash.addFlashAttribute("error","El cliente no existe en la base de datos");
+			return "redirect:/listar";
+		}
+		model.put("cliente", cliente);
+		model.put("titulo", "Detalle cliente: "+cliente.getNombre());
+		return "ver";
+	}
 	@RequestMapping( value="/listar",method=RequestMethod.GET )
 	public String listar(@RequestParam(name="page",defaultValue="0") int page, Model model){
 		
@@ -72,12 +94,43 @@ public class ClienteController {
 	}
 	
 	@RequestMapping( value="/form",method=RequestMethod.POST )
-	public String guardar(@Valid Cliente cliente,BindingResult result,Model model, RedirectAttributes flash,SessionStatus status ){
+	public String guardar(@Valid Cliente cliente,BindingResult result,Model model,@RequestParam("file") MultipartFile foto, RedirectAttributes flash,SessionStatus status ){
 	    
 		if(result.hasErrors()){
 			model.addAttribute("titulo","Formulario de Cliente");
 			return "form";
 		}
+		if(!foto.isEmpty()){
+//			Path directorioRecursos = Paths.get("src//main//resources//static//uploads");
+//			String rootPath = directorioRecursos.toFile().getAbsolutePath();
+			if(cliente.getId() != null && cliente.getId()>0 && cliente.getFoto() != null && cliente.getFoto().length()>0){
+				Path rootPath = Paths.get(UPLOADS_FOLDER).resolve(cliente.getFoto()).toAbsolutePath();
+				java.io.File archivo = rootPath.toFile();
+				
+				if(archivo.exists() && archivo.canRead()){
+					archivo.delete();
+				}
+			}
+			
+			String uniqueFilename = UUID.randomUUID().toString()+"_"+foto.getOriginalFilename();
+			Path rootPath = Paths.get(UPLOADS_FOLDER).resolve(uniqueFilename);
+			Path rootAbsolutPath = rootPath.toAbsolutePath();
+			
+			log.info("rootPath: "+rootPath);
+			log.info("rootAbsolutPath: "+rootAbsolutPath);
+			try {
+//				byte[] bytes = foto.getBytes();
+//				Path rutaCompleta = Paths.get(rootPath+"//"+foto.getOriginalFilename());
+//				Files.write(rutaCompleta, bytes);
+				Files.copy(foto.getInputStream(), rootAbsolutPath);
+				flash.addFlashAttribute("info","Has subido correctamente la foto '"+uniqueFilename+"'");
+				cliente.setFoto(uniqueFilename);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
 		String mensajeflah = (cliente.getId() != null)?"Cliente editado con éxito":"Cliente creado con éxito";
 		clienteService.save(cliente);
 		status.setComplete();
@@ -88,8 +141,18 @@ public class ClienteController {
 	@RequestMapping( value="/eliminar/{id}")
 	public String eliminar(@PathVariable(value="id") long id,RedirectAttributes flash){
 		if(id>0){
+			Cliente cliente = clienteService.findOne(id);
 			clienteService.delete(id);
 			flash.addFlashAttribute("success", "Cliente eliminado con éxito");
+			
+			Path rootPath = Paths.get(UPLOADS_FOLDER).resolve(cliente.getFoto()).toAbsolutePath();
+			java.io.File archivo = rootPath.toFile();
+			
+			if(archivo.exists() && archivo.canRead()){
+				if(archivo.delete()){
+					flash.addFlashAttribute("info", "Foto"+cliente.getFoto()+" eliminada con exito!");
+				}
+			}
 		}
 		return "redirect:/listar";
 	}

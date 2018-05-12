@@ -38,4 +38,9 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.example.demo.util.paginacion.PageItem"/>
 <fullyQualifiedTypeName name="com.example.demo.util.paginacion.PageRender"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.jni.File"/>
+<fullyQualifiedTypeName name="java.util.UUID"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
 </qualifiedTypeNameHistroy>
