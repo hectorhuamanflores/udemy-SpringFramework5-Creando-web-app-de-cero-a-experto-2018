@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.demo.models.entity.ItemFactur&apos; to &apos;ItemFactura&apos;&#x0D;&#x0A;- Original project: &apos;spring-boot-data-jpa&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.models.entity.ItemFactur&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.demo.models.entity.ItemFactura&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ItemFactur&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.example.demo.models.entity{ItemFactur.java[ItemFactur" matchStrategy="1" name="ItemFactura" qualified="false" references="true" similarDeclarations="false" stamp="1526355272490" textual="false" version="1.0"/>
+</session>

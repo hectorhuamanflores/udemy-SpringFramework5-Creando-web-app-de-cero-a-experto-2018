@@ -1,0 +1,6 @@
+package com.example.demo.controllers;
+
+@controller
+public class FacturaController {
+
+}
