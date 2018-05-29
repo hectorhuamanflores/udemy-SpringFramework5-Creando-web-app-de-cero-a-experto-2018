@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+   <script type="text/javascript" th:fragment="javascript"></script>
+</body>
+</html>
