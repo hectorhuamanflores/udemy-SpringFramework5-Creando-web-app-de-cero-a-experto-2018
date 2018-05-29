@@ -22,7 +22,8 @@
 					<div class="form-group row">
 					   <label class="col-sm-2 col-form-label" th:text="'Descripción'"></label>
 					   <div class="col-sm-6">
-					       <input type="text" th:field="*{descripcion}"  class="form-control"  />
+					       <input type="text" th:field="*{descripcion}" class="form-control" th:errorclass="'form-control is-invalid'" />
+							<div class="invalid-feedback" th:if="${#fields.hasErrors('descripcion')}" th:errors="*{descripcion}"></div>
 					   </div>
 					</div>
 					<div class="form-group row">
@@ -37,6 +38,22 @@
 					       <input type="text" name="buscar_producto" id="buscar_producto" class="form-control"  />
 					   </div>
 					</div>
+					
+					<table th:replace="factura/plantilla-items :: itemsFactura"></table>
+					<table id="cargarItemFactura" class="table table-sm table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Nombre</th>
+								<th>Precio</th>
+								<th>Cantidad</th>
+								<th>Total</th>
+								<th>Eliminar</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+					<h5><span class="badge badge-secondary" id="gran_total">0</span></h5>
 					<div class="form-group row">
 					   <div class="col-sm-6">
 					       <input type="submit" th:value="${titulo}"  class="btn btn-secondary"  />

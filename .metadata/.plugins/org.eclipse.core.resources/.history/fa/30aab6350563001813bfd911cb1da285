@@ -1,0 +1,6 @@
+NotEmpty.cliente.nombre = El nombre del cliente es requerido
+NotEmpty.cliente.apellido = El apellido es requerido
+NotEmpty.cliente.email = El email es requerido
+Email.cliente.apellido = La dirección de correo no es valido
+NotNull.cliente.createAt = La fecha no puede ser nula
+NotEmpty.factura.descripcion = La descripción es requerida!

@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
-<fullyQualifiedTypeName name="antlr.collections.List"/>
-<fullyQualifiedTypeName name="scala.annotation.meta.field"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
-<fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
-<fullyQualifiedTypeName name="scala.unchecked"/>
 <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="com.example.demo.models.dao.IClienteDao"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
@@ -17,7 +9,6 @@
 <fullyQualifiedTypeName name="org.springframework.data.solr.core.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.data.repository.PagingAndSortingRepository"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.PageRequest"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
 <fullyQualifiedTypeName name="com.example.demo.util.paginacion.PageItem"/>
@@ -49,14 +40,24 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
 <fullyQualifiedTypeName name="com.example.demo.models.service.IClienteService"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.example.demo.models.entity.Cliente"/>
-<fullyQualifiedTypeName name="com.example.demo.models.entity.Factura"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.SessionAttributes"/>
-<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
 <fullyQualifiedTypeName name="com.example.demo.models.dao.IProductoDao"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.example.demo.models.entity.Producto"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+<fullyQualifiedTypeName name="com.example.demo.models.entity.Factura"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.example.demo.models.dao.IFacturaDao"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.support.SessionStatus"/>
+<fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+<fullyQualifiedTypeName name="javax.validation.Valid"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.example.demo.models.entity.ItemFactura"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
 </qualifiedTypeNameHistroy>
