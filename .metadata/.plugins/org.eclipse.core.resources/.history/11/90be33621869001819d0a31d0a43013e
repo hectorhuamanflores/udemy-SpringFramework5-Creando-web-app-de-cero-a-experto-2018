@@ -1,0 +1,32 @@
+html:<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+<body>
+   <header th:replace="layout/layout :: header"></header>
+   
+    <div class="container py-4">
+		<div class="card bg-light">
+			<div class="card-header" th:text="${titulo}"></div>
+			<div class="card-body">
+				<h4 class="card-title" >
+				 <a th:href="@{'/ver/'+${factura.cliente.id}}" class="btn btn-light btn-xs">&laquo; volver</a>
+				</h4>
+				<ul class="list-group my-2">
+				  <li class="list-group-item list-group-item-primary" th:text="'Datos del cliente'"></li>
+				  <li class="list-group-item" th:text="${factura.cliente}"></li>
+				  <li class="list-group-item" th:text="${factura.cliente.email}"></li>
+				</ul>
+				<ul class="list-group">
+				  <li class="list-group-item list-group-item-primary" th:text="'Datos de la Factura'"></li>
+				  <li class="list-group-item" th:text="'Folio: '+${factura.id}"></li>
+				  <li class="list-group-item" th:text="'Descripción: '+${factura.descripcion}"></li>
+				  <li class="list-group-item" th:text="'Fecha: '+${factura.createAt}"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+   
+   <footer th:replace="layout/layout :: footer"></footer>
+   
+</body>
+</html>

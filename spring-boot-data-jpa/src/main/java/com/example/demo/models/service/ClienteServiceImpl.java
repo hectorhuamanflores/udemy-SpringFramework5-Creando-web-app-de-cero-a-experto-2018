@@ -43,23 +43,25 @@ public class ClienteServiceImpl implements IClienteService{
 	@Override
 	@Transactional(readOnly = true)
 	public Cliente findOne(long id) {
-		return clienteDao.findOne(id);
+		return clienteDao.findById(id).orElse(null);
 	}
 
 	@Override
 	@Transactional
 	public void delete(long id) {
-		clienteDao.delete(id);
+		clienteDao.deleteById(id);
 		
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Page<Cliente> findAll(Pageable pageable) {
 		// TODO Auto-generated method stub
 		return clienteDao.findAll(pageable);
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public List<Producto> findByNombre(String term) {
 		// TODO Auto-generated method stub
 		return productoDao.findByNombre(term);
@@ -72,9 +74,26 @@ public class ClienteServiceImpl implements IClienteService{
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Producto findProductoById(Long id) {
 		// TODO Auto-generated method stub
-		return productoDao.findOne(id);
+		return productoDao.findById(id).orElse(null);
 	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Factura findFacturabyId(Long id) {
+		// TODO Auto-generated method stub
+		return facturaDao.findById(id).orElse(null);
+	}
+
+	@Override
+	@Transactional
+	public void deleteFactura(Long id) {
+		// TODO Auto-generated method stub
+		facturaDao.deleteById(id);
+	}
+
+
 
 }
