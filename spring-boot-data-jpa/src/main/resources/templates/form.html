@@ -18,7 +18,7 @@
 				</div>
 				<form th:action="@{/form}" th:object="${cliente}" method="post" enctype="multipart/form-data">
 					<div class="form-group row">
-						<label class="col-sm-1" for="nombre">Nombre</label>
+						<label for="nombre" class="col-sm-1">Nombre</label>
 						<div class="col-sm-5">
 							<input type="text" class="form-control form-control-sm"
 								th:field="*{nombre}" th:errorclass="'form-control alert-danger'" />
@@ -27,7 +27,7 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label class="col-sm-1" for="nombre">Apellido</label>
+						<label for="apellido" class="col-sm-1">Apellido</label>
 						<div class="col-sm-5">
 							<input type="text" class="form-control form-control-sm"
 								th:field="*{apellido}"
@@ -37,7 +37,7 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label class="col-sm-1" for="nombre">Email</label>
+						<label for="email" class="col-sm-1" >Email</label>
 						<div class="col-sm-5">
 							<input type="text" class="form-control form-control-sm"
 								th:field="*{email}" th:errorclass="'form-control alert-danger'" />
@@ -46,17 +46,17 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label class="col-sm-1" for="fecha">Fecha</label>
+						<label for="createAt" class="col-sm-1" >Fecha</label>
 						<div class="col-sm-5">
 							<input type="text" class="form-control form-control-sm"
 								th:field="*{createAt}"
-								th:errorclass="'form-control alert-danger'" /> <small
+								th:errorclass="'form-control alert-danger'" placeholder="2018-08-22" /> <small
 								class="form-text text-danger"
 								th:if="${#fields.hasErrors('createAt')}" th:errors="*{createAt}"></small>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label class="col-sm-1" for="file">Foto</label>
+						<label for="file" class="col-sm-1" >Foto</label>
 						<div class="col-sm-5">
 							<input type="file" name="file" class="form-control" />
 						</div>

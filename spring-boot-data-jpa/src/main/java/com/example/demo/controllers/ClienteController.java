@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collection;
+import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
@@ -17,6 +18,7 @@ import org.apache.commons.logging.LogFactory;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -50,6 +52,8 @@ public class ClienteController {
 	protected final Log logger = LogFactory.getLog(this.getClass());
 	@Autowired
 	private IClienteService clienteService;
+	@Autowired
+	private MessageSource messageSource;
 	//private final Logger log = LoggerFactory.getLogger(getClass());
 	private final static String UPLOADS_FOLDER ="uploads";
 	@Secured("ROLE_USER")
@@ -66,7 +70,7 @@ public class ClienteController {
 	}
 	@RequestMapping( value= {"/listar","/"},method=RequestMethod.GET )
 	public String listar(@RequestParam(name="page",defaultValue="0") int page, Model model,
-			Authentication authentication,HttpServletRequest request){
+			Authentication authentication,HttpServletRequest request,Locale locale ){
 		if(authentication != null){
 			logger.info("Hola usuario autenticado, tu username es :".concat(authentication.getName()));
 		}
@@ -98,7 +102,8 @@ public class ClienteController {
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 		PageRender<Cliente> pageRender = new PageRender<>("/listar", clientes);
 		
-		model.addAttribute("titulo", "Listado de Clientes");
+//		model.addAttribute("titulo", messageSource.getMessage("text.cliente.listar.titulo", null, locale));
+		model.addAttribute("titulo",messageSource.getMessage("text.cliente.listar.titulo", null, locale));
 		model.addAttribute("clientes",clientes );
 		model.addAttribute("page",pageRender );
 		//model.addAttribute("clientes", clienteService.findAll());    sin paginación
@@ -135,6 +140,7 @@ public class ClienteController {
 	@RequestMapping( value="/form",method=RequestMethod.POST )
 	public String guardar(@Valid Cliente cliente,BindingResult result,Model model,@RequestParam("file") MultipartFile foto, RedirectAttributes flash,SessionStatus status ){
 	    
+		
 		if(result.hasErrors()){
 			model.addAttribute("titulo","Formulario de Cliente");
 			return "form";

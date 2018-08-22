@@ -27,6 +27,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name="clientes")
 public class Cliente implements Serializable{
     
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -44,7 +49,7 @@ public class Cliente implements Serializable{
 	@NotNull
 	@Column(name="create_at")
 	@Temporal(TemporalType.DATE)
-	@DateTimeFormat(pattern="dd-MM-yyyy")
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date createAt;
 	
 	@OneToMany(mappedBy="cliente",fetch = FetchType.LAZY, cascade= CascadeType.ALL)
