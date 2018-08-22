@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/messages.properties=UTF-8
+encoding//src/main/resources/messages_de.properties=UTF-8
+encoding//src/main/resources/templates/factura/form.html=UTF-8
+encoding//src/main/resources/templates/factura/ver.html=UTF-8
+encoding//src/main/resources/templates/ver.html=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

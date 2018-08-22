@@ -1,0 +1,4 @@
+text.cliente.nombre = Nombre
+text.cliente.apellido = Last name
+text.cliente.email = Email
+text.cliente.createAt = Create Date
