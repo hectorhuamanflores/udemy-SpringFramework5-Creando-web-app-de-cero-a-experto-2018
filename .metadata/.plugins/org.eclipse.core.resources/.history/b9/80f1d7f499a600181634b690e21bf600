@@ -1,0 +1,92 @@
+text.cliente.nombre = Vorname
+text.cliente.apellido = Nachname
+text.cliente.email = E-Mail
+text.cliente.foto = Photo
+text.cliente.createAt = Erstellungsdatum
+text.cliente.listar.titulo = Kundenliste
+
+text.cliente.crear = Neukunde
+text.cliente.editar = bearbeiten
+text.cliente.eliminar = löschen
+text.cliente.eliminarOk = Möchten Sie wirklich löschen?
+
+text.locale.language = Sprache
+text.locale.en= Englisch
+text.locale.es= Spanisch
+text.locale.de= Deutsche 
+
+text.paginator.first=Zuerst
+text.paginator.last=Letzte
+text.paginator.previous=&laquo;
+text.paginator.next=&raquo;
+
+text.menu.home=Zuhause
+text.menu.customer=Kunde
+text.menu.signin=Einloggen
+text.menu.signout=Ausloggen
+
+text.footer.roles = Rollen:
+text.footer.user = Angemeldeter Benutzer:
+text.footer.powered = Unterstützt von <a href="https://projects.spring.io/spring-boot/">Spring Boot</a> und <a href="http://www.thymeleaf.org">Thymeleaf</a>.
+text.footer.copy = Dieses Projekt wurde in IDE Eclipse + Spring Boot + Mysql für den E-Commerce-Kurs entwickelt. <br /> & copy; Zyklus 2018-1, gemeinnützig und nur für die Aufgabe des Kurses. <br />
+
+text.login.titulo = Bitte, Einloggen
+text.login.boton = Einloggen
+text.login.username = Nutzername
+text.login.password = Passwort
+text.login.success = Hallo %s, Erfolgreich eingeloggt
+text.login.already = Bereits angemeldet
+text.login.logout = Erfolgreich ausgeloggt
+text.login.error = Fehler: falscher Benutzername oder falsches Passwort, bitte versuchen Sie es erneut
+
+text.cliente.detalle.titulo = Kundendetails
+text.cliente.detalle.no.facturas = Dem Kunden sind keine Rechnungen zugeordnet
+
+text.cliente.factura.folio = Nummer
+text.cliente.factura.descripcion = Beschreibung
+text.cliente.factura.fecha = Datum
+text.cliente.factura.total = gesamt
+text.cliente.factura.crear = neue Rechnung
+text.cliente.factura.detalle = detail
+text.cliente.factura.eliminar = löschen
+text.cliente.factura.eliminarOk = Möchten Sie die Rechnung wirklich löschen?
+
+text.global.volver = &laquo; geh zurück
+
+text.factura.form.titulo = Neue Rechnung
+text.factura.form.item.eliminar = Röschen
+text.factura.form.buscar = Produktsuche
+text.factura.form.cliente = Kunde
+text.factura.form.observacion = Überwachung
+text.factura.form.total = Zuschusssumme
+text.factura.form.item.nombre = Produkt
+text.factura.form.item.precio = Preis
+text.factura.form.item.cantidad = Menge
+text.factura.form.item.total = Gesamt
+
+text.factura.ver.titulo = Rechnung: %s
+text.factura.ver.datos.cliente = Kundendaten
+text.factura.ver.datos.factura = Rechnungsdaten
+text.factura.ver.no.observaciones = Hat keine Beobachtungen
+text.factura.ver.no.lineas = Hat keine Artikel für die Rechnung
+
+text.factura.flash.db.error = Die Rechnung existiert nicht in der Datenbank
+text.factura.flash.lineas.error = Die Rechnung enthält keine Artikel, ein Detail ist erforderlich
+text.factura.flash.crear.success = Rechnung erfolgreich erstellt
+text.factura.flash.eliminar.success = Die Rechnung wurde erfolgreich entfernt
+
+text.cliente.form.titulo = Kundenformular
+text.cliente.form.titulo.crear = Erstellen
+text.cliente.form.titulo.editar = Bearbeiten
+
+text.cliente.flash.db.error = Der Kunde existiert nicht in der Datenbank
+text.cliente.flash.id.error = Die Kunden-ID darf nicht null sein
+text.cliente.flash.editar.success = Der Kunde wurde erfolgreich bearbeitet
+text.cliente.flash.crear.success = Kunde erfolgreich erstellt
+text.cliente.flash.eliminar.success = Kunde wurde erfolgreich entfernt
+text.cliente.flash.foto.subir.success = Erfolgreich hochgeladen
+text.cliente.flash.foto.eliminar.success = Foto %s erfolgreich gelöscht
+
+text.security.error.403.titulo = Zugriff abgelehnt!
+text.security.error.403.permiso = Es tut uns leid {0}, Sie haben keine Erlaubnis, auf diese Ressource zuzugreifen.
+text.security.error.403.volver = Zur Startseite

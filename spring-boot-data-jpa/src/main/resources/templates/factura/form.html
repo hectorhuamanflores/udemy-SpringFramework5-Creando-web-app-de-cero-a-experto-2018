@@ -9,31 +9,31 @@
 			<div class="card-header" th:text="${titulo}"></div>
 			<div class="card-body">
 				<h4 class="card-title">
-				  <a class="btn btn-ligth btn-xs" th:href="@{'/ver/'+${factura.cliente.id}}" th:text="'&laquo; volver'"></a>
+				  <a class="btn btn-ligth btn-xs" th:href="@{'/ver/'+${factura.cliente.id}}" th:utext="#{text.global.volver}"></a>
 				</h4>
 				
 				<form th:action="@{/factura/form}" th:object="${factura}" method="post">
 					<div class="form-group row">
-					   <label class="col-sm-2 col-form-label" th:text="'Cliente'"></label>
+					   <label class="col-sm-2 col-form-label" th:text="#{text.factura.form.cliente}"></label>
 					   <div class="col-sm-6">
 					       <input th:value="${factura.cliente.nombre}+' '+${factura.cliente.apellido}" class="form-control" disabled="disabled" />
 					   </div>
 					</div>
 					<div class="form-group row">
-					   <label class="col-sm-2 col-form-label" th:text="'Descripción'"></label>
+					   <label class="col-sm-2 col-form-label" th:text="#{text.cliente.factura.descripcion}"></label>
 					   <div class="col-sm-6">
 					       <input type="text" th:field="*{descripcion}" class="form-control" th:errorclass="'form-control is-invalid'" />
 							<div class="invalid-feedback" th:if="${#fields.hasErrors('descripcion')}" th:errors="*{descripcion}"></div>
 					   </div>
 					</div>
 					<div class="form-group row">
-					   <label class="col-sm-2 col-form-label" th:text="'Observación'"></label>
+					   <label class="col-sm-2 col-form-label" th:text="#{text.factura.form.observacion}"></label>
 					   <div class="col-sm-6">
 					       <input type="text" th:field="*{observacion}"  class="form-control"  />
 					   </div>
 					</div>
 					<div class="form-group row">
-					   <label for="buscar_producto" class="col-sm-2 col-form-label" th:text="'Buscar Producto'"></label>
+					   <label for="buscar_producto" class="col-sm-2 col-form-label" th:text="#{text.factura.form.buscar}"></label>
 					   <div class="col-sm-6">
 					       <input type="text" name="buscar_producto" id="buscar_producto" class="form-control"  />
 					   </div>
@@ -43,17 +43,18 @@
 					<table id="cargarItemFactura" class="table table-sm table-striped table-hover">
 						<thead>
 							<tr>
-								<th>Nombre</th>
-								<th>Precio</th>
-								<th>Cantidad</th>
-								<th>Total</th>
-								<th>Eliminar</th>
+								<th th:text="#{text.factura.form.item.nombre}">Nombre</th>
+								<th th:text="#{text.factura.form.item.precio}">Precio</th>
+								<th th:text="#{text.factura.form.item.cantidad}">Cantidad</th>
+								<th th:text="#{text.factura.form.item.total}">Total</th>
+								<th th:text="#{text.factura.form.item.eliminar}">Eliminar</th>
 							</tr>
 						</thead>
 						<tbody>
 						</tbody>
 					</table>
-					<h5><span class="badge badge-secondary" id="gran_total">0</span></h5>
+<!-- 					<h5><span class="badge badge-secondary" id="gran_total" >0</span></h5> -->
+                        <h5><span th:text="#{text.factura.form.total}">Total</span> <span class="badge badge-secondary" id="gran_total">0</span></h5>
 					<div class="form-group row">
 					   <div class="col-sm-6">
 					       <input type="submit" th:value="${titulo}"  class="btn btn-secondary"  />

@@ -9206,3 +9206,1145 @@ java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
 
 !ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 02:01:47.216
 !MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+!SESSION 2018-08-22 21:22:36.299 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\ProyectoUdemy\SpringUdemy\fuentes
+
+!ENTRY org.eclipse.ui 2 0 2018-08-22 21:22:44.450
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2018-08-22 21:22:44.450
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.lsp4e', id='org.eclipse.lsp4e.togglehighlight'
+
+!ENTRY org.eclipse.jface 2 0 2018-08-22 21:22:51.774
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-08-22 21:22:51.774
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d26b390,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ff5eeed,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-08-22 21:22:51.774
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.jboss.tools.jmx.ui.navigate.refresh,Refresh,
+		Refreshes the tree,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76b49d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(com.springsource.sts.roo.ui.shell.show,Open Roo Command Prompt,
+		Roo Command Prompt,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@223c42b0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-08-22 21:23:11.498
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Hector'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.ds 2 0 2018-08-22 21:23:21.330
+!MESSAGE Getting a lock required more than 10000 ms. There might be a synchronization problem in this callstack or just the build/dispose process of some components took too long! 
+!STACK 0
+java.lang.Exception: Debug stacktrace
+	at org.eclipse.equinox.internal.ds.InstanceProcess.getLock(InstanceProcess.java:120)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:560)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.addingService(ProvisioningAgent.java:159)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springsource.ide.eclipse.commons.internal.core.net.P2TransportService.getTransport_e3_7(P2TransportService.java:80)
+	at org.springsource.ide.eclipse.commons.internal.core.net.P2TransportService.<init>(P2TransportService.java:52)
+	at org.springsource.ide.eclipse.commons.core.HttpUtil.getTransport(HttpUtil.java:151)
+	at org.springsource.ide.eclipse.commons.core.HttpUtil.stream(HttpUtil.java:165)
+	at org.springsource.ide.eclipse.dashboard.internal.ui.editors.AggregateFeedJob$1.run(AggregateFeedJob.java:145)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-22 21:45:10.178
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-22 21:45:10.180
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-22 21:45:10.248
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-08-22 21:45:10.249
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2018-08-22 21:47:35.596
+!MESSAGE The ''Thymeleaf Processor Proposal Computer'' proposal computer from the ''org.thymeleaf.extras.eclipse.contentassist'' plug-in did not complete normally. The extension has thrown a runtime exception.
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: -1
+	at org.eclipse.wst.sse.core.internal.text.TextRegionListImpl.get(TextRegionListImpl.java:147)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.makeAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.java:195)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.generateProposals(AttributeProcessorProposalGenerator.java:166)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer.computeCompletionProposals(CompletionProposalComputer.java:84)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:284)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:290)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:484)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:255)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:127)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$3.run(ContentAssistant.java:1931)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1928)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:565)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:560)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:494)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:487)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1747)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:488)
+	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPTextEditor$JSPStructuredTextViewer.doOperation(JSPTextEditor.java:680)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:84)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:118)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:47:47.687
+!MESSAGE Scanning for dialect help files on project dependencies
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:47:47.979
+!MESSAGE Help file found: Spring-Security-Dialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:47:48.041
+!MESSAGE Help file found: Standard-Dialect.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:47:48.055
+!MESSAGE Help file found: Java8Time.xml
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:47:48.147
+!MESSAGE Scanning complete.  Execution time: 460ms
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:53:14.458
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.658
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.659
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.660
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.660
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.660
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.662
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.662
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.662
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.663
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.663
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.664
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.664
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:13.664
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:43.893
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 21:55:43.894
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:00:07.054
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:00:07.056
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:13.685
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:13.688
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:16.541
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:16.542
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:17.640
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:01:17.641
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:02:28.470
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:02:28.471
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:03.416
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:03.416
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:10.793
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:10.795
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:34.486
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: incremental
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:03:34.487
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:04:46.414
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:04:46.416
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:05:07.097
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:05:07.098
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:06:23.732
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:06:23.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:06:44.566
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:06:44.567
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:10.223
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:10.223
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:22.196
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:22.198
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:24.285
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:24.286
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:38.120
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:38.122
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:41.226
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:08:41.228
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:11:23.839
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 22:11:23.840
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:24:52.937
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:24:52.939
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:25:22.954
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:25:22.955
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:26:45.036
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:26:45.037
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:27:53.948
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:27:53.948
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:28:32.702
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:28:32.702
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:29:53.062
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-22 23:29:53.064
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 00:47:47.803
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 00:47:47.804
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 00:48:43.408
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 00:48:43.409
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:00:47.663
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:00:49.307
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:01:18.395
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:01:20.488
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:01:24.689
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:01:24.691
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:03:07.109
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:03:07.111
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:04:35.642
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:05:40.285
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:05:47.584
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:07:06.799
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:07:06.801
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:07:09.557
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:07:09.558
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:08:33.435
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:09:08.203
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:09:08.203
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:05.555
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:05.556
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:08.347
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:08.347
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:51.745
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:10:51.747
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:22.815
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.973
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.975
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.975
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.976
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.977
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.977
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.978
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.978
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.979
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.979
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.980
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:13:23.981
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:21.942
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.026
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.028
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.028
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.029
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.029
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.030
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.031
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.031
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.032
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.032
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.033
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.034
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:15:25.034
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:16:22.981
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:16:22.982
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:08.143
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.283
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.284
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.284
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.285
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.285
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.286
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.286
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.286
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.287
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.287
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.288
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:18:09.288
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:23.575
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.800
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.801
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.801
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.802
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.802
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.803
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.803
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.803
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.804
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.804
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.805
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:23:24.805
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:25:55.669
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:25:55.669
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:27:50.393
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:27:50.395
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:28:54.530
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:28:54.531
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:33:54.573
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:33:54.573
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:36:08.586
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:36:08.586
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:36:31.261
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:36:31.262
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:37:07.718
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:37:07.718
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:12.979
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:12.979
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:16.363
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:16.364
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:51.623
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:38:51.625
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:39:46.682
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:39:46.683
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:41:08.565
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:41:08.565
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:42:22.238
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:42:22.239
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:43:45.040
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:43:45.040
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:43:48.496
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:43:48.497
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:44:52.197
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:44:52.198
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:44:58.835
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:44:58.836
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:45:38.004
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:45:38.005
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:45:44.037
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:45:44.038
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:47:22.134
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:47:22.134
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:05.243
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.427
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.428
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.428
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.428
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.429
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.429
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.429
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.430
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.430
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.430
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.431
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:54:06.431
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:25.844
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.977
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.978
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.978
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.979
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.979
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.980
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.980
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.980
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.981
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.981
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.981
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 01:57:26.981
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:18.513
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.691
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.692
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.694
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.695
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.697
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.698
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.700
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.701
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.703
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.704
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.705
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:00:19.706
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:02.889
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.040
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.040
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.041
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.041
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.041
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.042
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.042
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.042
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.043
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.043
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.043
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:04.044
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:51.354
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.581
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.581
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.582
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.582
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.582
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.583
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.583
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.583
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.584
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.584
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.585
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:05:52.585
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:03.552
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.730
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.730
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/error_403.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.731
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.731
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/js/autocomplete-productos.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.732
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/plantilla-items.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.732
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/layout/layout.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.733
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.734
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/login.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.734
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/paginator-nav.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:06:04.734
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:09:11.911
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:09:11.912
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:09:43.594
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:09:43.595
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:10:03.096
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:10:03.097
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:10:50.610
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:10:50.611
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/listar.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:12:30.104
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:12:30.104
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:13:34.473
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:13:34.473
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:13:36.599
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:13:36.601
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:17:30.047
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:17:30.049
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:20:10.891
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:20:10.892
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/ver.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:21:28.503
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:21:28.504
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/ver.html
+
+!ENTRY org.eclipse.wst.sse.ui 2 2 2018-08-23 02:23:13.388
+!MESSAGE Exception caused by readAndDispatch, not caused by or fatal to caller
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.readAndDispatch(ToggleLineCommentHandler.java:262)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler$ToggleLinesRunnable.run(ToggleLineCommentHandler.java:202)
+	at org.eclipse.wst.sse.ui.internal.handlers.ToggleLineCommentHandler.processAction(ToggleLineCommentHandler.java:119)
+	at org.eclipse.wst.sse.ui.internal.handlers.AbstractCommentHandler.execute(AbstractCommentHandler.java:62)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor186.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1078)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1088)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1130)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1126)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1547)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4918)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:364)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4799)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:359)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5110)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2552)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3822)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:23:31.718
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:23:31.718
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:23:32.809
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:23:32.810
+!MESSAGE Checking resource: /spring-boot-data-jpa/target/classes/templates/factura/form.html
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:25:57.133
+!MESSAGE Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+
+!ENTRY org.thymeleaf.extras.eclipse 1 0 2018-08-23 02:25:57.135
+!MESSAGE Checking resource: /spring-boot-data-jpa/src/main/resources/templates/factura/form.html

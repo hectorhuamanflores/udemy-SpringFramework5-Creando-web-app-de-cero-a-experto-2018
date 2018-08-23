@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:replace="layout/layout :: head"></head>
 <body>
-
+    <div id="i18n_eliminar_cliente" th:text="#{text.cliente.eliminarOk}" style="display: none;"></div>
 	<header th:replace="layout/layout :: header"></header>
 
 	<div class="container py-4">
@@ -20,9 +20,9 @@
 							<th th:text="#{text.cliente.apellido}" scope="col">apellido</th>
 							<th th:text="#{text.cliente.email}" scope="col">email</th>
 							<th th:text="#{text.cliente.createAt}" scope="col">fecha</th>
-							<th scope="col" sec:authorize="hasRole('ROLE_ADMIN')">crear factura</th>
-							<th scope="col" sec:authorize="hasRole('ROLE_ADMIN')">editar</th>
-							<th scope="col" sec:authorize="hasRole('ROLE_ADMIN')">eliminar</th>
+							<th th:text="#{text.cliente.factura.crear}" scope="col" sec:authorize="hasRole('ROLE_ADMIN')">crear factura</th>
+							<th th:text="#{text.cliente.editar}" scope="col" sec:authorize="hasRole('ROLE_ADMIN')">editar</th>
+							<th th:text="#{text.cliente.eliminar}" scope="col" sec:authorize="hasRole('ROLE_ADMIN')">eliminar</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -33,12 +33,12 @@
 							<td th:text="${cliente.email}"></td>
 							<td th:text="${cliente.createAt}"></td>
 							<td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-outline-success btn-sm"
-								th:href="@{'/factura/form/' + ${cliente.id}}" th:text="'crear factura'"></a></td>
+								th:href="@{'/factura/form/' + ${cliente.id}}" th:text="#{text.cliente.factura.crear}"></a></td>
 							<td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-outline-primary btn-sm"
-								th:href="@{/form/}+${cliente.id}" th:text="editar"></a></td>
+								th:href="@{/form/}+${cliente.id}" th:text="#{text.cliente.editar}"></a></td>
 							<td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-outline-danger btn-sm"
-								th:href="@{/eliminar/}+${cliente.id}" th:text="eliminar"
-								onclick="return confirm('Estas seguro que deseas eliminar el regitro');"></a></td>
+								th:href="@{/eliminar/}+${cliente.id}" th:text="#{text.cliente.eliminar}"
+								onclick="return confirm(document.getElementById('i18n_eliminar_cliente').innerHTML);"></a></td>
 						</tr>
 					</tbody>
 				</table>
