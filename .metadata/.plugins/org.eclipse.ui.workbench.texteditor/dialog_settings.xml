@@ -9,20 +9,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="UUID" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="@GetMapping(value = &quot;/ver/{id}&quot;)"/>
+			<item value="text.login.titulo"/>
+			<item value="text.locale.languaje"/>
 			<item value="UUID"/>
 			<item value="passwordEncoder"/>
 			<item value="Secured"/>
 			<item value="userDetailsService"/>
 			<item value="findByUsername"/>
-			<item value="findBy"/>
-			<item value="eliminarLineaFactura"/>
-			<item value="&quot;uploads&quot;"/>
 		</list>
 		<list key="replacehistory">
 		</list>

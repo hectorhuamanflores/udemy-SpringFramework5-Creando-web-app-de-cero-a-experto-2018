@@ -38,7 +38,6 @@
 <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.example.demo.models.dao.IUsuarioDao"/>
 <fullyQualifiedTypeName name="com.example.demo.models.entity.Usuario"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -52,12 +51,13 @@
 <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UsernameNotFoundException"/>
 <fullyQualifiedTypeName name="com.example.demo.models.service.JpaUserDetailsService"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.LocaleResolver"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.SessionLocaleResolver"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-<fullyQualifiedTypeName name="org.springframework.context.MessageSource"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.LocaleResolver"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="org.springframework.context.MessageSource"/>
 </qualifiedTypeNameHistroy>
