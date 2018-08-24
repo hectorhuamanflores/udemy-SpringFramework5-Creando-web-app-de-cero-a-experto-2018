@@ -22,7 +22,7 @@
 						th:href="@{/listar}" th:text="#{text.menu.customer}">Cliente</a></li>
 				</ul>
 				<ul class="navbar-nav navbar-right">
-				  <li sec:authorize ="!isAuthenticated()"><a class="btn btn-outline-primary" th:href="@{/login}" th:text="#{text.menu.signin}">Sign In</a></li>
+				  <li sec:authorize !="isAuthenticated()"><a class="btn btn-outline-primary" th:href="@{/login}" th:text="#{text.menu.signin}">Sign In</a></li>
 				  <li sec:authorize="isAuthenticated()" class="dropdown show">
 						<a class="btn btn-outline-primary dropdown-toggle" href="#"
 							role="button" id="dropdownMenuLink" data-toggle="dropdown"
@@ -30,11 +30,7 @@
 
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 							<form id="logoutForm" th:action="@{/logout}" method="post">
-								<button class="dropdown-item"
-									onclick="document.getElementById('logoutForm').submit();"
-									type="submit" th:text="#{text.menu.signout}">Sign Out</button>
-								<input type="hidden" th:name="${_csrf.parameterName}"
-									th:value="${_csrf.token}" />
+								<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
 							</form>
 							
 						</div>
