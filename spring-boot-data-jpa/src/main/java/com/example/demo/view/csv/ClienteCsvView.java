@@ -16,7 +16,7 @@ import com.example.demo.models.entity.Cliente;
 
 
 
-@Component("listar")
+@Component("listar.csv")
 public class ClienteCsvView extends AbstractView {
 
 	public ClienteCsvView() {

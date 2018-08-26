@@ -1,0 +1,10 @@
+package com.example.demo.view.xml;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.view.xml.MarshallingView;
+
+@Component
+public class ClienteListXmlView extends MarshallingView {
+   
+	
+}
