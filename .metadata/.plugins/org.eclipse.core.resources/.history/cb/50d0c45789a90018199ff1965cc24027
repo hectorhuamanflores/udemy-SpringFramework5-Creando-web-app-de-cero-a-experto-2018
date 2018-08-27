@@ -46,7 +46,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.example.demo.models.entity.Cliente;
 import com.example.demo.models.service.IClienteService;
 import com.example.demo.util.paginacion.PageRender;
-import com.example.demo.view.xml.ClienteList;
 
 
 @Controller
@@ -72,17 +71,11 @@ public class ClienteController {
 		model.put("titulo", messageSource.getMessage("text.cliente.detalle.titulo", null, locale).concat(": ").concat(cliente.getNombre()));
 		return "ver";
 	}
-//  Solo para retornar JSON
-//	@GetMapping("/listar-rest")
-//	@ResponseBody
-//	public List<Cliente> listarRest(){
-//		return clienteService.findAll();
-//	}
-	//Para retornar JSON y XML
+	//Solo para retornar JSON
 	@GetMapping("/listar-rest")
 	@ResponseBody
-	public ClienteList listarRest(){
-		return new ClienteList(clienteService.findAll());
+	public List<Cliente> listarRest(){
+		return clienteService.findAll();
 	}
 	@RequestMapping( value= {"/listar","/"},method=RequestMethod.GET )
 	public String listar(@RequestParam(name="page",defaultValue="0") int page, Model model,
